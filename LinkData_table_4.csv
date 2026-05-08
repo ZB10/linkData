@@ -1,0 +1,6 @@
+﻿Value,Scope function
+1,Section: Only return variables that are SECTION specific.
+2,Test: Only return variables that are TEST specific.
+32,Event: Only return variables that are EVENT specific.
+64,Only return variables that require an analog channel.
+128,Only return variables that require a NVH channel.

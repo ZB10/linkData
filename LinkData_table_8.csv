@@ -1,0 +1,7 @@
+﻿CHN=,"Channel list to be returned in the format CHN=nnn:unit,nnn:unit etc. The first channel specified is the X channel (MIN and MAX are referenced to this channel). The following channel(s) are the Y channel(s). Example: CHN=23:degrees,101:lb*ft,103:psi Will return 3 columns of data. Column 1 will contain values from MIN to MAX. Columns 1 and 2 will contain the average of all the raw data samples that fell in the bucket of column 1. Up to 15 different channels may be specified."
+MIN=,Minimum. This defines the value of the first bucket. Defined in the units used to define the 1st channel in the channel list above.
+MAX=,Maximum. This defines the value of the last bucket. Defined in the units used to define the 1st channel in the channel list above.
+FILT=,"All channels (including time) will be filtered to this frequency (hz). Be aware that sloping of the data WILL occur with filtering. If the X channel is rotary position (0 to 359 degrees), this slope effect will make 0 and 360 degrees never appear in the output array and falsely place the fast sloping data in the wrong buckets."
+STIME=,"Data will be scanned forward or backward from the current raw data position (Seek_RawTime). If NOT specified, ALL raw data available will be used."
+INTERP,Goes through all buckets and interpolates bucket values (buckets with no samples) based on the surrounding buckets.
+GSLOW,Read global slow data.

@@ -1,0 +1,20 @@
+﻿File,Type,Folder,Description
+*.DSS,Binary,Root,"Summary data (fixed record size, 1 record per event)."
+*.DSR,Binary,Root,"Raw (time based data), setpoint data, possibly spectral sound data."
+*.HCF,Text,Root,Header configuration (questions).
+*.DSH,Text,Root,Header answers.
+*.DSF,Text,Root,Analog channel fullscales (fixed for entire test).
+*.DSX,Binary,Root,Analog channel fullscales (tracked changes during test).
+*.DSG,Binary,Root,Global slow data.
+*.DSC,Binary,Root,Event (stop) comments.
+*.PSC,Text,Root,Event (stop) comments.
+*.LSC,Text,Root,Event (stop) comments (LinkData.DLL only).
+*.INI,Text,Root,Configurations.
+*.CHG,Binary,Root,Test changes.
+*.USED,Text,Root,"File containing all channels used by the test, if ever used."
+*.DSW *.DW#,Binary,Root,Wear dimensional / weight measurements .
+*.TIM,Binary,Media\,Thermal images/video
+*.AVI *.MPG *.ASF,Binary,Media\,"Various supported visual video formats, named with section / record / channel number (SSSSRRRR_ch?.ext)"
+*.WAV *.MP3,Binary,Media\,"Time domain auto sample files, named with section / record / channel number (SSSSRRRR_ch?.ext)."
+*.TIM,Binary,Media\,"Supported thermal videos, named with section / record / channel number (SSSSRRRR_ch?.TIM)."
+$Blob_Data_X.BLB,Text,Root,see Blob Data.

@@ -1,0 +1,20 @@
+﻿Type,Description
+1,Operator comment
+2,Test finished
+3,Dynologger.DLL aborted stop
+4,Inspection stop
+5,Cycle stopped
+6,Cycle started
+7,Machine failure
+9,Out if limits (DOS data only)
+10,Update network completed OK (DOS data only)
+11,Update network failed (DOS data only)
+12,Error saving to local disk (DOS data only)
+13,DynoLogger.DLL information
+14,Sound driver error
+15,Dynologger.DLL error
+16,Sound driver DLL error
+20,Operator hours
+21,Operator test monitoring
+22,Scheduled idle time
+23,Downtime reason
