@@ -1,0 +1,11 @@
+﻿CHN=,"Channel list to be returned in the format CHN=nnn:unit,nnn:unit etc. Example: CHN=0:sec,101:lb*ft,103:psi Will return 3 channels (time, pressure and torque). The array MUST be created with bounds[1]= 3 (for 3 channels). If the channel number is zero, raw data time will be returned for that column of data. Up to 15 different channels may be specified."
+FILT=,All channels (except time) will be LOW PASS filtered to this frequency (hz) (1 pole).
+LPASS=,All channels (except time) will be LOW PASS filtered to this frequency using LPOLES number of poles (poles default = 1).
+LPOLES=,Define the number of poles in the LPASS filter (1 to 8).
+HPASS=,All channels (except time) will be HIGH PASS filtered to this frequency using HPOLES number of poles (poles default = 1).
+HPOLES=,Define the number of poles in the HPASS filter (1 to 8).
+STIME=,"Scan time (sec). Data will be scanned forward or backward from the current raw data position (Seek_RawTime). If NOT specified, data from the current raw data position to the end of data will be returned."
+RATE=,"Output rate (hz) of desired output data (optional, default= 0)."
+GSLOW,Read global slow data.
+ROTAVG=x,Rotationally filter all returned data to the frequency specified.
+MOVAVG=x,Moving average all returned data to the frequency specified.

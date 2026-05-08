@@ -1,0 +1,16 @@
+﻿STIME=,"Scan time, number of seconds to move forward (if value positive) or backward (if value negative) from the current rawtime position (set by Seek_Rawtime or Scan_Raw) while searching. Default is 0 (use the single data sample at seek position). If the value exceeds the beginning or end of the raw stop data, an out of bounds error is returned."
+MAX,"Return the maximum value found in scan (default if neither MIN, MAX, or AVG specified). The Seek_Rawtime value is left at the position the max value was found."
+MIN,Return the minimum value found in scan. The Seek_Rawtime value is left at the position the min value was found.
+AVG,Return the average value of all samples found in the scan.
+AVGDIST,Return the average value of all samples found in the scan by DISTANCE (requires a valid speed channel in the raw data).
+GSLOW,Scan the Global Slow Data (else the currently selected stop’s raw data).
+CHN=,Channel number to use while scanning (may be a mapped channel).
+UNT=,Engineering unit of the resultant value (res).
+FILT=,Low pass the data to this frequency while processing.
+LPASS=,"Same as “FILT” above. Note: If filtering is specified, the data is scanned prior to the specified times to allow the filters to settle out."
+LPOLES=,"Number of poles in the low pass filter (default is 1, can be 1, 2, 4, 6, 8 or 10)."
+HPASS=,"High pass the data to this frequency while processing. Note: If filtering is specified, the data is scanned prior to the specified times to allow the filters to settle out."
+HPOLES=,"Number of poles in the high pass filter (default is 1, can be 1, 2, 4, 6, 8 or 10)."
+NOTCH,"If specified, the high and low filters specify a notch filter (all frequencies between the high pass frequency are REMOVED). Else, a bandpass filter is assumed."
+BANDPASS,"If specified, only data between the low pass frequency and high pass frequency will be passed though. This is the default case if NOTCH is NOT specified."
+ROTAVG=,"Rotationally average the raw data to the revolutions provided before processing. This is similar to the FILT above but averages a number of samples about each point by the time specified by the current rotational speed. For example, with ROTAVG=0.5 and the machine running at 60 rpm (1 rev/sec), all raw data points used for processing will be an average of 0.25 second about the time point. This allows removing all noise above the fundamental rotational frequency of the machine."

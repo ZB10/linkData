@@ -1,0 +1,14 @@
+﻿STIME=,"Scan time, number of seconds to move forward (if value positive) or backward (if value negative) from the current rawtime position (set by Seek_Rawtime or Scan_Raw) while searching. Default is 0 (use the single data sample at seek position). If the value exceeds the beginning or end of the raw stop data, an out of bounds error is returned."
+ABOVE,Scan until a value above the threshold is found (default if neither is specified).
+BELOW,Scan until a value below the threshold is found.
+GSLOW,Scan the Global Slow Data (else the currently selected stop’s raw data).
+THR=,The threshold value to scan for.
+CHN=,Channel number to use while scanning (may be a mapped channel).
+UNT=,Engineering unit of the threshold value (res).
+FILT=,Low pass the data to this frequency while processing
+LPASS=,Same as “FILT” above.
+LPOLES=,"Number of poles in the low pass filter (default is 1, can be 1, 2, 4, 6, 8 or 10)."
+HPASS=,High pass the data to this frequency while processing.
+HPOLES=,"Number of poles in the high pass filter (default is 1, can be 1, 2, 4, 6, 8 or 10)."
+NOTCH,"If specified, the high and low filters specify a notch filter (all frequencies between the high pass frequency are REMOVED). Else, a bandpass filter is assumed."
+BANDPASS,"If specified, only data between the low pass frequency and high pass frequency will be passed though. This is the default case if NOTCH is NOT specified."
